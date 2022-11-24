@@ -1,28 +1,39 @@
 package com.bridgelabz;
 
+import java.util.Scanner;
+
 public class LinkedList {
 
-    public static void display() {
+    Node head;
+    Node tail;
 
-        System.out.println("Welcome to Data Structure Program (Linked List)");
+    public Node insert(int data) {
+        /*
+        create a new node
+         */
+        Node newNode = new Node(data);
+        /*
+        check list empty
+         */
+        if (head == null) {
+            head = newNode;
+        } else {
+            Node temp = head;// 56=>30=>70
+            this.head = newNode;
+            newNode.next = temp;
+        }
+        return newNode;
     }
-    public static void main(String[] args) {
-        display();
-        Node firstNode = new Node(56);
-        Node secondNode = new Node(30);
-        Node thirdNode = new Node(70);
-        Node head = firstNode;
-        firstNode.next = secondNode;
-        secondNode.next = thirdNode;
 
-        Node temp = head;
-
-        /* While loop
-        If temp is not equalto null then print sout data
-        */
-        while (temp != null) {
-            System.out.println(temp.data);
-            temp = temp.next;
+    public void print() {
+        if (head == null) {
+            System.out.println("Linked List Is Empty");
+        } else {
+            Node temp = head;
+            while (temp != null) {
+                System.out.print(temp.data + "->");
+                temp = temp.next;
+            }
         }
     }
 }
