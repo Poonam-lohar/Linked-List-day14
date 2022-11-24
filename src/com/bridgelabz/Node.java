@@ -5,7 +5,7 @@ package com.bridgelabz;
 public class Node {
 
         public int data;
-        public com.bridgelabz.Node next;
+        public Node next;
 
         public Node(int data) {
             this.data = data;
