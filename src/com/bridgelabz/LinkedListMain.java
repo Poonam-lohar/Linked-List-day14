@@ -13,8 +13,8 @@ public class LinkedListMain {
 
         System.out.println("Welcome to Data Structure Program (Linked List)");
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter 1 to add the data at the start");//Uc1
-        System.out.println("Enter 2 to add data at End"); //UC2
+        System.out.println("Enter 1 to add the data at the start");//Uc2
+        System.out.println("Enter 2 to add data at End"); //UC1
         switch (sc.nextInt()) {
 
             case 1:

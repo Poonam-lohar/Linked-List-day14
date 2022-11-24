@@ -42,7 +42,7 @@ public class LinkedList {
         if (head == null) {
             head = newNode;
             tail = newNode;
-        } else  {
+        } else {
             this.tail.next = newNode;
             tail = newNode;
         }
