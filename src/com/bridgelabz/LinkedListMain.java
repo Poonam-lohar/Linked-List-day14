@@ -13,9 +13,9 @@ public class LinkedListMain {
 
         System.out.println("Welcome to Data Structure Program (Linked List)");
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter 1 to add the data at the start");//Uc1
-        System.out.println("Enter 2 to add data at End"); //UC2
-        System.out.println("Enter 3 to Inser in between");//uc3
+        System.out.println("Enter 1 to add the data at the start");//Uc2
+        System.out.println("Enter 2 to add data at End"); //UC3
+        System.out.println("Enter 3 to Inser in between");//uc4
         switch (sc.nextInt()) {
 
             case 1:
