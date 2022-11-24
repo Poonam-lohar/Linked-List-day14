@@ -13,7 +13,8 @@ public class LinkedListMain {
 
         System.out.println("Welcome to Data Structure Program (Linked List)");
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter 1 to add the data at the start");
+        System.out.println("Enter 1 to add the data at the start");//Uc1
+        System.out.println("Enter 2 to add data at End"); //UC2
         switch (sc.nextInt()) {
 
             case 1:
@@ -23,7 +24,13 @@ public class LinkedListMain {
 
                 list.print();
                 break;
+            case 2:
+                list.append(56);
+                list.append(30);
+                list.append(70);
 
+                list.print();
+                break;
         }
     }
 }

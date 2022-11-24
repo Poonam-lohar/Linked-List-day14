@@ -18,7 +18,7 @@ public class LinkedList {
         if (head == null) {
             head = newNode;
         } else {
-            Node temp = head;// 56=>30=>70
+            Node temp = head;// 56->30->70
             this.head = newNode;
             newNode.next = temp;
         }
@@ -34,6 +34,17 @@ public class LinkedList {
                 System.out.print(temp.data + "->");
                 temp = temp.next;
             }
+        }
+    }
+
+    public void append(int data) { //56->30->70
+        Node newNode = new Node(data);
+        if (head == null) {
+            head = newNode;
+            tail = newNode;
+        } else  {
+            this.tail.next = newNode;
+            tail = newNode;
         }
     }
 }
