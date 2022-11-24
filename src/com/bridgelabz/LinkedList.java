@@ -48,9 +48,15 @@ public class LinkedList {
         }
     }
 
-    public void insertBetween(Node prevNode,Node newNode) {
+    public void insertBetween(Node prevNode, Node newNode) {
         Node tempNode = prevNode.next;
         prevNode.next = newNode;
         newNode.next = tempNode;
+    }
+
+    public int pop() {
+        int deleteElement = head.data;
+        head = head.next;
+        return deleteElement;
     }
 }
