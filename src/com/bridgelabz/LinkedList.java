@@ -42,9 +42,15 @@ public class LinkedList {
         if (head == null) {
             head = newNode;
             tail = newNode;
-        } else  {
+        } else {
             this.tail.next = newNode;
             tail = newNode;
         }
+    }
+
+    public void insertBetween(Node prevNode,Node newNode) {
+        Node tempNode = prevNode.next;
+        prevNode.next = newNode;
+        newNode.next = tempNode;
     }
 }
